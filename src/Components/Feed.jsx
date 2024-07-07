@@ -10,16 +10,11 @@ const Feed = () => {
     const [selectedcategory,setSelectedCategory]=useState("New")
     const [videos,setVideos]=useState([])
 
-    useEffect(()=>{
-        FetchvideosAPI(`search?part=snippet&q${selectedcategory}`).then((resp)=>{
-             setVideos(resp.items)
-            console.log(resp.items)
-        })
-
-        
-
-            
-    },[selectedcategory])
+    useEffect(() => {
+      
+        FetchvideosAPI(`search?part=snippet&q=${selectedcategory}`)
+          .then((data) => setVideos(data.items))
+        }, [selectedcategory]);
   return (
     <Stack sx={{flexDirection:{sx:"column",md:"row"}}}>
         <Box sx={{height:{sx:'auto',md:'92vh'},borderRight:'1px solid #3d3d3d',px:{sx:0,md:2},backgroundColor:"#000"}}>
