@@ -31,5 +31,5 @@ Start the server
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://github.com/yuvraj1898/youtube_clone/blob/master/Screenshot%202024-12-30%20at%2011.17.27-min.png)
 
